@@ -1,5 +1,7 @@
 <div id="<%= dom_id post %>">
-  <strong><%= post.user.name %></strong><br/>
-  <small><%= post.user.username %></small>
+  <% if user_signed_in? %>
+    <strong><%= post.user.name %></strong><br/>
+    <small>@<%= post.user.username %></small>
+  <% end %>
   <p><%= post.text %></p>
 </div>

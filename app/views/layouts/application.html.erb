@@ -11,6 +11,34 @@
   </head>
 
   <body>
+  <nav class="navbar is-light">
+    <div class="navbar-brand">
+      <%= link_to root_path, class: "navbar-item" do %>
+        <h1 class="title is-5 is-white">MembersOnly!</h1>
+      <% end %>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <p class="control">
+              <%= link_to 'Sign Up', new_user_registration_path, class: "button is-primary" %>
+            </p>
+            <p class="control">
+              <%= link_to 'Sign In', new_user_session_path, class: "button is-light" %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
     <%= yield %>
   </body>
