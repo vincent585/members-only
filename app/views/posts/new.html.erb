@@ -1,9 +1,7 @@
-<h1>New post</h1>
-
-<%= render "form", post: @post %>
-
-<br>
-
-<div>
-  <%= link_to "Back to posts", posts_path %>
+<h1 class="has-text-centered has-text-primary is-size-1">New post</h1>
+<div class="columns is-centered">
+  <div class="column is-one-quarter has-text-centered">
+    <%= render "form", post: @post %>
+  </div>
 </div>
+
