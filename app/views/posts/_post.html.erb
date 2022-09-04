@@ -1,7 +1,14 @@
-<div id="<%= dom_id post %>">
-  <% if user_signed_in? %>
-    <strong><%= post.user.name %></strong><br/>
-    <small>@<%= post.user.username %></small>
-  <% end %>
-  <p><%= post.text %></p>
+<div class="columns is-centered">
+  <div class="column is-half">
+    <div class="has-text-centered" id="<%= dom_id post %>">
+    <% if user_signed_in? %>
+      <strong><%= post.user.name %></strong><br/>
+      <small>@<%= post.user.username %></small>
+    <% else %>
+      <strong>Sign in to see who's posting!</strong><br/>
+    <% end %>
+    <p><%= post.text %></p>
+    </div>
+  </div>
 </div>
+

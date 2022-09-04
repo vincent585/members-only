@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1 class="has-text-centered has-text-primary is-size-1">Posts</h1><br/>
 
 <div id="posts">
   <% @posts.each do |post| %>
@@ -8,4 +8,11 @@
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<br/>
+
+<div class="has-text-centered has-text-link-dark">
+    <%= link_to "New post", new_post_path %>
+</div>
+
+
+
