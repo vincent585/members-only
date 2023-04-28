@@ -1,24 +1,4 @@
-# README
+This project is part of the Odin Project's Rails course on Cookies, Session, and Authentication.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It has a simple forum where users can create posts and comments and see who created them, but only if they
+are logged in.
