@@ -1,0 +1,19 @@
+<%= form_with model: @post do |form| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(@post.errors.count, "error") %> prevented this post from being created:</h2>
+
+        <ul>
+            <% @post.errors.full_messages.each do |msg| %>
+              <li> <%= msg %> </li>
+            <% end %>
+        </ul>
+    </div>
+  <% end %>
+
+  <%= form.label :title, "Title" %><br />
+  <%= form.text_field :title, placeholder: "Your post title goes here", autofocus: true %><br />
+  <%= form.label :body, "Body" %><br />
+  <%= form.text_area :body, size: "70x15", placeholder: "What's on your mind?" %><br />
+  <%= form.submit "Create post" %>
+<% end %>
